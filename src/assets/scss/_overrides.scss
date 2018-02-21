@@ -1,0 +1,239 @@
+// TABLE OF CONTENTS
+// =================
+// ANIMATIONS
+// ----------
+/// animition: spin
+/// animation: fadeInBottom
+/// animation: slideInLeft
+// HOME
+// ----
+/// home: intro
+// **********************************
+// GLOBAL STYLE
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+*, *::before, *::after {
+    transition: all .6s ease-in-out;
+}
+body {
+    background: #234;
+    color: #efefef;
+    font-size: 15px;
+    font-family: 'Roboto Mono'; 
+    @media screen and (max-width: 64em) {
+        background: #534;
+    }
+    @media screen and  (max-width: 40em) {
+        background: #354;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto';
+}
+// OffCanvasRight
+.off-canvas {
+    background: white;
+    li, li a {
+        color: #234;
+    }
+    li.menu-text {
+        background: rgba(#234, .8);
+        border-top: 1px solid rgba(0,0,0,.25);
+        border-bottom: 1px solid rgba(0,0,0,.25);
+        &:hover {
+            background: #0084aa;
+        }
+    }
+}
+// Nav 
+nav.sticky-container {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+// Top-Bar Navigation
+.top-bar, .top-bar ul {
+    //  FIXME: [X] - !important stmts are gross 
+    margin-top: 0; // Used corrected data statement in html for margin-top
+    padding-top: 0;
+    background: transparent;
+    &.light {
+        background:rgba(255,255,255,.5);
+    }
+    img {
+        max-height: 45px;
+        padding-top: .5em;
+    }
+}
+
+#menu-toggle {
+    position: fixed !important;
+    top: 1em;
+    right: 1em;
+    height: 25px;
+    width: 25px;
+    padding: .3em;
+    text-align: center;
+    background:rgba(255,255,255,.7);
+    border-radius: 50%;
+    transform: rotate(180deg);
+    &::before {
+        content: '+';
+    }
+    &:hover {
+        background: #00ccff;
+        color: #223344;
+        transform: rotate(0deg);
+        &::before {
+            content: '*';
+        }
+    }
+    
+}
+
+// pageTitle 
+.pageTitle {
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 200px;
+    text-transform: uppercase;
+}
+
+// Footer
+footer {
+    font-size: 14px;
+    padding-bottom: 2em;
+    a {
+        color: #00ccff;
+        font-weight: 600;
+        &:hover {
+            color: white;
+        }
+    }
+    @media screen and (max-width: 64em) {
+        text-align: center;
+    }
+}
+
+footer div, footer blockquote {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @media screen and (max-width: 64em) {
+        text-align: center;
+    }
+}
+#ft-cols {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.ft_logo img {
+    max-height: 35px;
+}
+
+.ourNumber {
+    font-size: 18px;
+    font-weight: 600;
+    &::before {
+        content: '\f095';
+        font-family: 'FontAwesome';
+        color: rgba(255,255,255,.8);
+    }
+}
+// Footer Cred Icons
+.fa-heart {
+    color: red;
+}
+.fa-code {
+    color: cornflowerblue;
+}
+.fa-coffee {
+    color: rgb(212, 172, 62);
+}
+
+footer {
+    .row {
+        display: justify;
+        align-items: center;
+    }
+}
+
+
+
+
+// ANIMATIONS
+// ----------
+// animation: spin
+@keyframes spin {
+    0% {transform: rotate(0deg); opacity: .95;}
+    100% {transform: rotate(360deg); opacity: 1;}
+}
+.spin {
+    animation: spin 5.3s infinite linear;
+}
+// animation: fadeInBottom
+@keyframes fadeInBottom {
+    0% { top: 50% ; opacity: 0;}
+    100% { top: 0% ; opacity: 1;}
+}
+.fadeInBottom {
+    animation: fadeInBottom 1s ease-in;
+}
+// animation: slideInLeft
+@keyframes slideInLeft {
+    0% { right: 700px; top: 50%; opacity: 0;}
+    100% { right: 0;  top: 0%; opacity: 1;}
+}
+.slideInLeft {
+    animation: slideInLeft 2s ease-in;
+}
+
+
+
+// HOME
+// ----
+// home.intro
+#intro {
+    text-align: center;
+    padding: 2em;
+    overflow: hidden !important;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+[id^="intro_"] {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+}
+// home.intro.title 
+.intro_title {
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-top: 1em; 
+}
+// home.intro.subtitle
+.intro_subtitle {
+    color: rgba(255,255,255,.7);
+    font-family: 'Roboto';
+}
+// home.intro.icon
+.intro_icon {
+    height: 150px;
+    width: 150px;
+    opacity: .5;
+    @media screen and (max-width: 40em) {
+        height: 125px;
+        width: 125px;
+    }
+    &:hover {
+        animation: spin 3s ease-in-out;
+        opacity: 1;
+    }
+}
