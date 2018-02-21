@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="Da65aO0SkW7VgxJlbxxVDyCRCkLqsp1iawpoZe4V3zI" />
 <title>All things web &amp; mobile app development &middot; AI5LE</title>
-<link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="assets/css/app.css">
+<link rel="icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body>
 <!-- google analytics -->
