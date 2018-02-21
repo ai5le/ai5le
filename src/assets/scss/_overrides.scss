@@ -1,20 +1,44 @@
 // TABLE OF CONTENTS
 // =================
-// ANIMATIONS
-// ----------
-/// animition: spin
-/// animation: fadeInBottom
-/// animation: slideInLeft
-// HOME
-// ----
-/// home: intro
-// **********************************
-// GLOBAL STYLE
+// 1. GLOBAL STYLE
+// 1.1 GLOBAL IMPORTS
+// 1.1.1 ANIMATIONS
+// 1.1.1.1 ANIMATION: SPIN
+// 1.1.1.2 ANIMATION: FADEINBOTTOM
+// 1.1.1.3 ANIMATION: SLIDEINLEFT
+// 1.2 GLOBAL *
+// 1.3 BODY
+// 1.4 TYPOGRAPHY
+// 1.4.1 HEADINGS
+// 1.5 NAVIGATION
+// 1.5.1 OFF-CANVAS
+// 1.5.2 NAV
+// 1.5.3 TOP-BAR
+// 1.5.3.1 TOP-BAR MENU TOGGLE
+// 2. PAGE-CONTENT
+// 2.1 HEADER
+// 2.1.1 PAGE-TITLE
+// 2.9 FOOTER
+// 2.9.2 FOOTER COLS
+// 2.9.2.1 FOOTER COLS - FT-ABOUT
+// 2.9.3 FOOTER BOTTOM
+// 2.9.3.1 FOOTER BOTTOM - FT-COPY
+// 2.9.3.2 FOOTER BOTTOM - FT-CRED
+// 2.9.3.2.1 FOOTER BOTTOM - FT-CRED - ICONS
+// 2.9.3.3 FOOTER BOTTOM - FT-TEL
+
+// ============================================================================
+// 1.1 GLOBAL IMPORTS
+@import 'components/guide';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
 @import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+@import 'components/animations';
+// 1.2 GLOBAL *
 *, *::before, *::after {
     transition: all .6s ease-in-out;
 }
+// 1.3 BODY
 body {
     background: #234;
     color: #efefef;
@@ -27,10 +51,13 @@ body {
         background: #354;
     }
 }
+// 1.4 TYPOGRAPHY
+// 1.4.1 HEADINGS
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto';
 }
-// OffCanvasRight
+// 1.5 NAVIGATION
+// 1.5.1 OFF-CANVAS
 .off-canvas {
     background: white;
     li, li a {
@@ -45,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
-// Nav 
+// 1.5.2 NAV 
 nav.sticky-container {
     position: fixed;
     top: 0; 
@@ -53,7 +80,7 @@ nav.sticky-container {
     right: 0;
     width: 100%;
 }
-// Top-Bar Navigation
+// 1.5.3 TOP-BAR
 .top-bar, .top-bar ul {
     //  FIXME: [X] - !important stmts are gross 
     margin-top: 0; // Used corrected data statement in html for margin-top
@@ -67,7 +94,7 @@ nav.sticky-container {
         padding-top: .5em;
     }
 }
-
+// 1.5.3.1 TOP-BAR MENU-TOGGLE
 #menu-toggle {
     position: fixed !important;
     top: 1em;
@@ -93,7 +120,9 @@ nav.sticky-container {
     
 }
 
-// pageTitle 
+// 2 PAGE-CONTENT
+// 2.1 HEADER
+// 2.1.1 PAGE-TITLE
 .pageTitle {
     padding-top: 2em;
     width: 100%;
@@ -104,8 +133,7 @@ nav.sticky-container {
     height: 200px;
     text-transform: uppercase;
 }
-
-// Footer
+// 2.9 FOOTER
 footer {
     font-size: 14px;
     padding-bottom: 2em;
@@ -115,6 +143,10 @@ footer {
         &:hover {
             color: white;
         }
+    }
+    .row {
+        display: justify;
+        align-items: center;
     }
     @media screen and (max-width: 64em) {
         text-align: center;
@@ -128,6 +160,8 @@ footer div, footer blockquote {
         text-align: center;
     }
 }
+// 2.9.1 FOOTER CALL2ACTION
+// 2.9.2 FOOTER COLS
 #ft-cols {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -135,6 +169,7 @@ footer div, footer blockquote {
     align-content: center;
     align-items: center;
 }
+// 2.9.2.1 FOOTER COLS - FT-ABOUT
 .ft_logo img {
     max-height: 35px;
 }
@@ -148,7 +183,10 @@ footer div, footer blockquote {
         color: rgba(255,255,255,.8);
     }
 }
-// Footer Cred Icons
+// 2.9.3 FOOTER BOTTOM
+// 2.9.3.1 FOOTER BOTTOM - FT-COPY
+// 2.9.3.2 FOOTER BOTTOM - FT-CRED
+// 2.9.3.2.1 FOOTER BOTTOM - FT-CRED - ICONS
 .fa-heart {
     color: red;
 }
@@ -158,45 +196,7 @@ footer div, footer blockquote {
 .fa-coffee {
     color: rgb(212, 172, 62);
 }
-
-footer {
-    .row {
-        display: justify;
-        align-items: center;
-    }
-}
-
-
-
-
-// ANIMATIONS
-// ----------
-// animation: spin
-@keyframes spin {
-    0% {transform: rotate(0deg); opacity: .95;}
-    100% {transform: rotate(360deg); opacity: 1;}
-}
-.spin {
-    animation: spin 5.3s infinite linear;
-}
-// animation: fadeInBottom
-@keyframes fadeInBottom {
-    0% { top: 50% ; opacity: 0;}
-    100% { top: 0% ; opacity: 1;}
-}
-.fadeInBottom {
-    animation: fadeInBottom 1s ease-in;
-}
-// animation: slideInLeft
-@keyframes slideInLeft {
-    0% { right: 700px; top: 50%; opacity: 0;}
-    100% { right: 0;  top: 0%; opacity: 1;}
-}
-.slideInLeft {
-    animation: slideInLeft 2s ease-in;
-}
-
-
+// 2.9.3.3 FOOTER BOTTOM - FT-TEL
 
 // HOME
 // ----

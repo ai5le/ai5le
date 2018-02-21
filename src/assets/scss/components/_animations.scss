@@ -1,0 +1,27 @@
+// 1.1.1 ANIMATIONS
+// 1.1.1.1 ANIMATION: SPIN
+@keyframes spin {
+    0% {transform: rotate(0deg); opacity: .95;}
+    100% {transform: rotate(360deg); opacity: 1;}
+}
+.spin {
+    animation: spin 5.3s infinite linear;
+}
+// 1.1.1.2 ANIMATION: FADEINBOTTOM
+@keyframes fadeInBottom {
+    0% { top: 50% ; opacity: 0;}
+    100% { top: 0% ; opacity: 1;}
+}
+.fadeInBottom {
+    animation: fadeInBottom 1s ease-in;
+}
+
+// 1.1.1.3 ANIMATION: SLIDEINLEFT
+@keyframes slideInLeft {
+    0% { right: 700px; top: 50%; opacity: 0;}
+    100% { right: 0;  top: 0%; opacity: 1;}
+}
+.slideInLeft {
+    animation: slideInLeft 2s ease-in;
+}
+
