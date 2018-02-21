@@ -4,12 +4,15 @@
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> &middot; AI5LE</title>
-<link rel="stylesheet" href="../assets/css/app.css">
+<meta name="google-site-verification" content="Da65aO0SkW7VgxJlbxxVDyCRCkLqsp1iawpoZe4V3zI" />
+<title>All things web &amp; mobile app development &middot; AI5LE</title>
+<link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-
-<!-- off-canvas-wrapper -->
+<!-- google analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112068380-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-112068380-1');</script><!-- off-canvas-wrapper -->
 <div class="off-canvas-wrapper">
     <!-- off-canvas -->
     <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
