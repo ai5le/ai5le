@@ -131,6 +131,9 @@ footer div, footer blockquote {
 #ft-cols {
     margin-bottom: 0;
     padding-bottom: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 .ft_logo img {
     max-height: 35px;
