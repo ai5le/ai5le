@@ -168,6 +168,8 @@ footer div, footer blockquote {
     display: flex;
     align-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+
 }
 // 2.9.2.1 FOOTER COLS - FT-ABOUT
 .ft_logo img {
@@ -184,6 +186,9 @@ footer div, footer blockquote {
     }
 }
 // 2.9.3 FOOTER BOTTOM
+#ft-bttm {
+    border-top: 1px solid rgba(255,255,255,.05);
+}
 // 2.9.3.1 FOOTER BOTTOM - FT-COPY
 // 2.9.3.2 FOOTER BOTTOM - FT-CRED
 // 2.9.3.2.1 FOOTER BOTTOM - FT-CRED - ICONS
@@ -198,60 +203,3 @@ footer div, footer blockquote {
 }
 // 2.9.3.3 FOOTER BOTTOM - FT-TEL
 
-// HOME
-// ----
-// home.intro
-#intro {
-    text-align: center;
-    padding: 2em;
-    overflow: hidden !important;
-    width: 100%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
-[id^="intro_"] {
-    margin: 0 0 1rem 0;
-    padding: 1rem;
-}
-// home.intro.title 
-.intro_title {
-    color: white;
-    font-weight: 500;
-    font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    padding-top: 1em; 
-}
-// home.intro.subtitle
-.intro_subtitle {
-    color: rgba(255,255,255,.7);
-    font-family: 'Roboto';
-}
-// home.intro.icon
-.intro_icon {
-    height: 150px;
-    width: 150px;
-    opacity: .5;
-    @media screen and (max-width: 40em) {
-        height: 125px;
-        width: 125px;
-    }
-    &:hover {
-        animation: spin 3s ease-in-out;
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
-
-
-
-// TEST AREA
-// FIXME: This area needs to be corrected.
-
-.orbit-container img {
-    max-height: 400px;
-}
