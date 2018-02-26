@@ -4,7 +4,37 @@ quote: Simplicity is the ultimate sophistication.
 quoteAuthor: Leonardo da Vinci
 
 # Projects
-projects:
+pastprojects: 
+  -
+    name: Berenson Oncology
+    client: James R. Berenson, MD, Inc.
+    url: http://berensononcology.com
+    categories: 
+      - existing site redesign
+      - cms/wordpress integration    
+      - photography
+      - content creation
+  -
+    name: Oncotherapeutics
+    client: Oncotherapeutics, Inc.
+    url: http://oncotherapeutics.com
+    categories: 
+      - existing site redesign
+      - cms/wordpress integration  
+      - theme customization  
+      - photography
+      - content creation
+  -
+    name: OncoTracker, Inc.
+    client: OncoTracker, Inc.
+    url: http://oncotracker.net
+    categories: 
+      - website development and design
+      - cms/wordpress integration
+      - theme customization    
+      - photography
+      - content creation      
+currentprojects:
   -  
     name: Standard Management Services
     client: The Standard Management Services
@@ -35,32 +65,3 @@ projects:
       - website design/development
       - branding/logo
       - cms/wordpress integration    
-  -
-    name: Berenson Oncology
-    client: James R. Berenson, MD, Inc.
-    url: http://berensononcology.com
-    categories: 
-      - existing site redesign
-      - cms/wordpress integration    
-      - photography
-      - content creation
-  -
-    name: Oncotherapeutics
-    client: Oncotherapeutics, Inc.
-    url: http://oncotherapeutics.com
-    categories: 
-      - existing site redesign
-      - cms/wordpress integration  
-      - theme customization  
-      - photography
-      - content creation
-  -
-    name: OncoTracker, Inc.
-    client: OncoTracker, Inc.
-    url: http://oncotracker.net
-    categories: 
-      - website development and design
-      - cms/wordpress integration
-      - theme customization    
-      - photography
-      - content creation      
