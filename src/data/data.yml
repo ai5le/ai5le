@@ -2,3 +2,65 @@ siteName: AI5LE
 siteDesc: All things web & mobile app development
 quote: Simplicity is the ultimate sophistication.
 quoteAuthor: Leonardo da Vinci
+
+# Projects
+projects:
+  -  
+    name: Standard Management Services
+    client: The Standard Management Services
+    url: http://standardmgmt.com
+    categories: 
+      - website redesign
+      - branding/logo
+      - cms/wordpress integration
+    img1: client_standardmgmt_home.png
+    img2: client_standardmgmt_about.png
+    img3: client_standardmgmt_posts.png
+  -
+    name: WebFast Insurance
+    client: WebFast Insurance Services
+    url: https://webfastinsurance.com
+    categories: 
+      - website redesign
+      - branding/logo optimization
+      - cms/wordpress integration    
+    img1: client_webfast_home.png
+    img2: client_webfast_about.png
+    img3: client_webfast_posts.png    
+  -
+    name: HollywoodHotSpot.net
+    client: Hollywood Hot Spot
+    url: http://hollywoodhotspot.net
+    categories: 
+      - website design/development
+      - branding/logo
+      - cms/wordpress integration    
+  -
+    name: Berenson Oncology
+    client: James R. Berenson, MD, Inc.
+    url: http://berensononcology.com
+    categories: 
+      - existing site redesign
+      - cms/wordpress integration    
+      - photography
+      - content creation
+  -
+    name: Oncotherapeutics
+    client: Oncotherapeutics, Inc.
+    url: http://oncotherapeutics.com
+    categories: 
+      - existing site redesign
+      - cms/wordpress integration  
+      - theme customization  
+      - photography
+      - content creation
+  -
+    name: OncoTracker, Inc.
+    client: OncoTracker, Inc.
+    url: http://oncotracker.net
+    categories: 
+      - website development and design
+      - cms/wordpress integration
+      - theme customization    
+      - photography
+      - content creation      

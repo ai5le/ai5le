@@ -1,0 +1,27 @@
+<div class="row large-up-3 medium-up-1 small-up-1">
+    {{#each data.projects }}
+    <div class="column card project">
+        <div class="link">
+            <p>
+                <b>CLIENT: </b>
+                <span class="client">
+                    {{client}}</span>
+            </p>
+        </div>
+        <div class="link">
+            <p>
+                <b>URL: </b>
+                <span class="link">
+                    <a href="{{url}}">{{url}}</a>
+                </span>
+            </p>
+        </div>
+        {{#if categories}}
+        <p>
+            <b>PROJECT CATEGORIES: </b>
+            <br/> {{#each categories}}
+            <a href="{{this}}">{{this}} <br> 
+            </a>{{/each}} </p>{{/if}} </div>
+
+    {{/each}}
+</div>
